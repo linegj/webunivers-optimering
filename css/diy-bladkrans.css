@@ -128,7 +128,7 @@ header label {
 }
 
 body{
-    background-image: url(../img/kamera-billeder-small/blade.webp);
+    background-image: url(../img/optimerede-billeder/blade.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -195,7 +195,7 @@ body{
 }
 
 footer {
-    background-image: url(../img/kamera-billeder-small/blade.webp);
+    background-image: url(../img/optimerede-billeder/blade.webp);
     width: 100%;
    background-attachment: fixed;
    background-size: cover;

@@ -128,7 +128,7 @@ header label {
 
 
 body{
-    background-image: url(../img/kamera-billeder-small/lyng-blade.webp);
+    background-image: url(../img/optimerede-billeder/lyng-blade.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -165,12 +165,12 @@ body{
 }
 
 .container #slider-image2 {
-    background-image: url(../img/kamera-billeder-small/bundetkrans-slide2.jpg);
+    background-image: url(../img/optimerede-billeder/bundetkrans-slide2.webp);
     background-size: cover;
 }
 
 .container #slider-image3 {
-    background-image: url(../img/kamera-billeder-small/bundetkrans-slide3.jpg);
+    background-image: url(../img/optimerede-billeder/bundetkrans-slide3.webp);
     background-size: cover;
 }
 
@@ -180,12 +180,12 @@ body{
 }
 
 .container #slider-image5 {
-    background-image: url(../img/kamera-billeder-small/bundetkrans-slide5.jpg);
+    background-image: url(../img/optimerede-billeder/bundetkrans-slide5.webp);
     background-size: cover;
 }
 
 .container #slider-image6 {
-    background-image: url(../img/kamera-billeder-small/bundetkrans-slide6.jpg);
+    background-image: url(../img/optimerede-billeder/bundetkrans-slide6.webp);
     background-size: cover;
 }
 
@@ -205,7 +205,7 @@ body{
 }
 
 footer {
-    background-image: url(../img/kamera-billeder-small/lyng-blade.webp);
+    background-image: url(../img/optimerede-billeder/lyng-blade.webp);
     width: 100%;
    background-size: cover;
    background-attachment: fixed;
