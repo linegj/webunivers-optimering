@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 7%;
+    z-index: 1000;
+    background-color: rgba(0,0,0,0.5);
+}
+
+header .navbar ul {
+    list-style: none;
+    margin-top: 30px;
+}
+
+header .navbar ul li {
+    position: relative;
+    float: left;
+    margin: 5px 5px;
+}
+
+header .navbar ul li a {
+   text-decoration: none;
+   font-size: 20px;
+   padding: 18px;
+   color: #eddbce ;
+   display: block;
+}
+
+header .navbar ul li a:hover {
+    background: #40392b;
+    color: #eddbce ;
+
+}
+
+header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #252119;
+    display: none;
+}
+
+header .navbar ul li ul li {
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,0.1) ;
+}
+
+header .navbar ul li ul li ul {
+    left: 200px;
+    top: 0;
+}
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul {
+    display: block;
+}
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    font-size: 20%;
+    color: #eddbce ;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width:991px) {
+
+
+    header {
+        padding: 20px;
+    }
+
+    header label {
+        display: block;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: 1px solid rgba(0,0,0,0.1);
+        display: none;
+    }
+
+    header .navbar ul li {
+        width: 100%;
+    }
+
+    header .navbar ul li ul {
+        position: relative;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li {
+        background: #eee;
+    }
+
+    header .navbar ul li ul li ul {
+        width: 100%;
+        left: 0;
+    }
+
+    #menu-bar:checked ~ .navbar {
+        display: block;
+    }
+
+}
+
+#logo {
+    width: 80px;
+    height: 80px;
+}
+
+.baggrund1 {
+    background-image:url('../img/kamera-billeder-small/blade-paa-jorden-2.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width:100%;
+    height: 100vh;
+}
+
+.content1 {
+    padding-top: 230px;
+    width: 90%;
+    padding-left: 5%;
+    Padding-right: 5%;
+    text-align: center;
+}
+
+.textbox {
+    width: 90%;
+    margin-left: 10%;
+    background-color:rgba(0,0,0,0.5);
+}
+
+.content1 h2 {
+    font-size: 60px;
+    color: #eddbce;
+    font-family: brush script MT, sans-serif;
+}
+
+.content1 p {
+    font-size: 20px;
+    color: #eddbce;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 30px;
+    line-height: 40px;
+}
+
+.diy-bladkrans {
+    background-image:url('../img/kamera-billeder-small/diy-bladkrans.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width:100%;
+    height: 100vh;
+}
+
+.bladkrans-content {
+    margin-left: 800px;
+    padding-top: 50px;
+}
+
+.bladkrans-content h2 {
+    font-size: 80px;
+    color: #eddbce;
+    font-family: brush script MT, sans-serif;
+}
+
+.bladkrans-content h3 {
+    font-size: 35px;
+    color: #eddbce;
+    padding-left: 10px;
+    margin-bottom: 250px;
+}
+
+.diy-bladkrans-button {
+    background-color: #eddbce;
+    color: #252119;
+    padding: 20px;
+    margin-top: 200px;
+    font-size: 20px;
+    border-radius: 16px;
+}
+
+.diy-bundetkrans {
+    background-image:url('../img/kamera-billeder-small/diy-krans.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width:100%;
+    height: 100vh;
+}
+
+.bundetkrans-content {
+    margin-left: 40px;
+    padding-top: 60px;
+}
+
+.bundetkrans-content h2 {
+    font-size: 80px;
+    color: #252119;
+    font-family: brush script MT, sans-serif;
+}
+
+.bundetkrans-content h3 {
+    font-size: 35px;
+    color: #252119;
+    padding-left: 10px;
+    margin-bottom: 300px;
+}
+
+.diy-bundetkrans-button {
+    background-color: #252119;
+    color:#eddbce;
+    padding: 20px;
+    margin-top: 250px;
+    font-size: 20px;
+    border-radius: 16px;
+}
+
+footer {
+    background-image: url(../img/kamera-billeder-small/blade-paa-jorden-2.webp);
+    width: 100%;
+   background-attachment: fixed;
+   background-size: cover;
+   background-position: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    background-color: rgba(0,0,0,0.5);
+    padding: 5px 7%;
+}
+
+.medlem {
+    list-style: none;
+}
+
+.medlem input {
+    text-align: center;
+    margin-top: 8%;
+    border-color: #eddbce;
+    background-color:  rgba(0,0,0,0.5);
+    color: #eddbce;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+}
+
+.medlem  button {
+    text-align: center;
+    padding: 2px;
+    background-color: #eddbce;
+    margin-top: 8%;
+    display: flex;
+}
+
+.medlem h3 {
+    color: #eddbce;
+    font-size: 25px;
+}
+
+.footer-logo img {
+    width: 350px;
+    height: 100px;
+}
+
+.kontakt h3 {
+    color: #eddbce;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.kontakt img {
+    width: 160px;
+    margin-top: 10%;
+}
+
+.kontakt p {
+    color: #eddbce;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.bundetkrans-button {
+   padding: 20px;
+   background-color: #252119;
+   color: #eddbce;
+   border-radius: 16px;
+}
+
+.bladkrans-button { /* Her styler jeg anchortagget som en knap*/
+    padding: 20px; /* indre space/størrelse */
+    background-color: #eddbce; 
+    color: #252119;
+    border-radius: 16px;  /* giver den runde kanter */
+}
+
+
+
+
+
+
+

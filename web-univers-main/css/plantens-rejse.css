@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#logo {
+    width: 80px;
+    height: 80px;
+}
+
+header {
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 7%;
+    z-index: 1000;
+    background-color: rgba(0,0,0,0.5);
+}
+
+header .navbar ul {
+    list-style: none;
+    margin-top: 30px;
+}
+
+header .navbar ul li {
+    position: relative;
+    float: left;
+    margin: 5px 5px;
+}
+
+header .navbar ul li a {
+   text-decoration: none;
+   font-size: 20px;
+   padding: 18px;
+   color: #eddbce ;
+   display: block;
+}
+
+header .navbar ul li a:hover {
+    background: #40392b;
+    color: #eddbce ;
+
+}
+
+header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #252119;
+    display: none;
+}
+
+header .navbar ul li ul li {
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,0.1) ;
+}
+
+header .navbar ul li ul li ul {
+    left: 200px;
+    top: 0;
+}
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul {
+    display: block;
+}
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    font-size: 20%;
+    color: #eddbce ;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width:991px) {
+
+
+    header {
+        padding: 20px;
+    }
+
+    header label {
+        display: block;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: 1px solid rgba(0,0,0,0.1);
+        display: none;
+    }
+
+    header .navbar ul li {
+        width: 100%;
+    }
+
+    header .navbar ul li ul {
+        position: relative;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li {
+        background: #eee;
+    }
+
+    header .navbar ul li ul li ul {
+        width: 100%;
+        left: 0;
+    }
+
+    #menu-bar:checked ~ .navbar {
+        display: block;
+    }
+
+}
+
+.baggrund1 {
+    background-image:url('../img/kamera-billeder-small/trae.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width:100%;
+    height: 100vh;
+}
+
+.content1 {
+    padding-top: 180px;
+    width: 90%;
+    padding-left: 5%;
+    Padding-right: 5%;
+    text-align: center;
+    color: #eddbce;
+    font-size: 25px;
+}
+
+.textbox {
+    width: 90%;
+    margin-left: 10%;
+    background-color:rgba(0,0,0,0.5);
+    height: 300px;
+}
+
+h1 {
+    font-size: 70px;
+    color: #eddbce;
+    font-family: brush script MT, sans-serif;
+   padding-left: 100px;
+   padding-bottom: 40px;
+}
+
+.content1 h2 {
+    padding-top: 20px;
+}
+
+.content1 p {
+    padding-top: 20px;
+    line-height: 50px;
+}
+
+.box {
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    padding: 30px;
+ 
+ }
+ 
+ .box h2 {
+     font-size: 40px;
+     color: #eddbce;
+     text-align: center;
+ }
+
+ .baggrund2 {
+    background-image:url('../img/kamera-billeder-small/blade-paa-trae-2.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width:100%;
+    height: 100vh;
+}
+
+.box1 {
+    width: 70%;
+    margin-left: 5%;
+    background-color:rgba(0,0,0,0.5);
+    height: 400px;
+    margin-top: 80px;
+}
+
+.box1 h2 {
+    font-size: 60px;
+    color: #eddbce;
+    font-family: brush script MT, sans-serif;
+    text-align: center;
+}
+
+.box1 p {
+    color: #eddbce;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.baggrund3 {
+    background-image:url('../img/kamera-billeder-small/blade.paa.trae.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width:100%;
+    height: 100vh;
+} 
+
+.content2 {
+    width: 70%;
+    margin-left: 300px;
+    background-color:rgba(0,0,0,0.5);
+    height: 270px;
+}
+
+.content2 h2 {
+    font-size: 60px;
+    color: #eddbce;
+    font-family: brush script MT, sans-serif;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.content2 p {
+    color: #eddbce;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.box3 {
+    width: 60%;
+    margin-left: 20px;
+    background-color:rgba(0,0,0,0.5);
+    height: 270px;
+    margin-top: 50px;
+}
+
+.box3 h2 {
+    font-size: 60px;
+    color: #eddbce;
+    font-family: brush script MT, sans-serif;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.box3 p {
+    color: #eddbce;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.baggrund4{ /* Jeg styler min baggrund med et billed */
+    background-image:url('../img/kamera-billeder-small/blomster-close-up.webp');
+    background-size: cover;/* billedet fylder hele skærmen */
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-attachment: fixed; /* billedet bliver fast i forhold til vinduet */
+    width:100%; /* hele billedet bliver vist */
+    height: 100vh;
+}
+
+.box4 {
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.box5 {
+    width: 80%;
+    margin-left: 10%;
+    background-color:rgba(0,0,0,0.5);
+    height: 300px;
+    margin-top: 120px;
+    text-align: center;
+}
+
+.box5 p {
+    color: #eddbce;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    padding: 20px;
+}
+
+.box5 button {
+    background-color: #eddbce;
+    color: #051709;
+    padding: 10px;
+    border-radius: 16px;
+    margin-top: 40px;
+    font-size: 20px;
+}
+footer {
+    background-image: url(../img/kamera-billeder-small/blomster-close-up.webp);
+    width: 100%;
+   background-size: cover;
+   background-attachment: fixed;
+   background-position: center;
+    display: flex;
+    justify-content: space-between;
+} 
+
+.boks {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    background-color: rgba(0,0,0,0.5);
+    padding: 5px 7%;
+    height: 200px;
+}
+
+.medlem {
+    list-style: none;
+}
+
+.medlem input {
+    text-align: center;
+    margin-top: 8%;
+    border-color: #eddbce;
+    background-color:  rgba(0,0,0,0.5);
+    color: #eddbce;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+}
+
+.medlem  button {
+    text-align: center;
+    padding: 2px;
+    background-color: #eddbce;
+    margin-top: 8%;
+    display: flex;
+}
+
+.medlem h3 {
+    color: #eddbce;
+    font-size: 25px;
+}
+
+.footer-logo img {
+    width: 350px;
+    height: 100px;
+}
+
+.kontakt h3 {
+    color: #eddbce;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.kontakt img {
+    width: 160px;
+    margin-top: 10%;
+}
+
+.kontakt p {
+    color: #eddbce;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10%;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Floral Fantasy skaber grobund for nye idéer og hjælper dig i gang med dit næste blomsterprojekt">
+    <meta name="keyword" content="blomster, diy, blomsterkrans, planter, levevilkår, kreativitet">
+    <title>Floral Fantasy. Kun fantasien sætter grænser</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logo/logo-3.png" type="image/png">
+</head>
+
+
+<body>
+    <header> <!-- Jeg bruger det semantiske tag <header> som indeholder min navigationsbar. Her bruger jeg også <nav> (navigatinsbar), <ul> og <li> (unorderd list og list item) -->
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar"> Menu </label>
+        <a href="index.html">
+            <img id="logo" src="img/logo/logo-nr-1-beige.png" alt="primære logo">
+        </a> 
+        
+        <nav class="navbar">
+           <ul> <!--ul>li*3>a-->
+            
+                <li><a href="#"> Inspiration </a></li>
+                <li><a href="#"> DIY +</a>
+                    <ul>
+                        <li><a href="diy-main.html"> DIY efterårskranse + </a>
+                        <ul>
+                            <li><a href="diy-bladkrans.html"> Bladkrans </a></li>
+                            <li><a href="diy-bundet-krans.html"> Bundet krans </a>
+                        </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#"> Anledning </a></li>
+                <li><a href="#"> Info +</a>
+                    <ul>
+                        <li><a href="plantens-rejse.html"> Plantens rejse</a></li>
+                    </ul>
+                </li>
+    
+           </ul>
+
+        </nav>
+
+    </header>  
+    
+    <main> <!-- Jeg har sat det primære indhold i et maintag -->
+     
+        <section class="baggrund1"> <!-- Jeg deler indhold op i sektioner. Mange af sektionerne skal have forskellige baggrundsbilleder -->
+            <article class="content1">
+                <h1>Velkommen til </h1> <!-- h1 og h2 til overskrifter -->
+                <h2>Floral Fantasy</h2>
+            </article>
+        </section>
+        
+       
+        <section class="baggrund2"> 
+            <div class="box">
+                <h2> Et kreativt blomsterunivers hvor kun fantasien sætter grænser</h2>
+            </div>
+            <article>
+                <div class="tekstbox1">
+                        <h2>Blomster er for alle og behøver ikke at koste en formue</h2>
+                        <p> Hos Floral Fantasy har vi sat kreativitet i højsædet. 
+                            Vi vil guide og vejlede <strong>den kreative</strong> gennem forskellige dekorative elementer, give <strong>den nysgerrige</strong> viden, tips 
+                            og tricks samt vælte <strong>den inspirationssøgende</strong>  med en storm af idéer. 
+                            Start din rejse med blomster på budget nu og her.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="baggrund3"> 
+            <div class="boxlayout">
+               
+                <article class="trend"> <!-- Jeg inddeler bokse i articles-->
+                    <h2> Dette trender lige nu</h2>
+                    <p> Find inspiration til lækre efterårskranse eller bliv klogere på planternes rejse og levevilkår</p>
+                </article>
+               
+                <article class="bladkrans">
+                    <a href="diy-bladkrans.html">
+                        <img src="img/kamera-billeder-small/bladkrans-forside.png" alt="billed af bladkrans">
+                    </a>
+                </article>
+                
+                <article class="bundetkrans">
+                    <a href="diy-bundet-krans.html">
+                        <img src="img/kamera-billeder-small/bundetkrans-forside.png" alt="billed af en bundet efterårskrans">
+                    </a> 
+                </article>
+                
+                <article class="plantens-rejse">
+                    <a href="plantens-rejse.html">
+                        <img src="img/illustrationer/plante-vaekst.png" alt="fra spire til plante illustration">
+                    </a> 
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+
+            <section class="footer-logo">
+                <img src="img/logo/logo-nr-2-beige.png" alt="horisontal logo">
+            </section>
+            
+            <section class="kontakt">
+                <h3>Kontakt</h3>
+                <p>Floralfantasy@gmail.dk</p>
+                <a href="#"><img src="img/illustrationer/instagram.png" alt="instagram logo"></a>
+            </section>
+
+            <section class="medlem">
+                
+                    <h3>Bliv medlem</h3>
+                    <form> <!-- -->
+                    <input type="text" class="inputbox" placeholder="Dit navn">
+                    <input type="text" class="inputbox" placeholder="Din email">
+                    <button type="button" class="blivmedlem-btn">Indsend</button>
+                    </form>  
+            </section>
+     </div>
+</footer>
+    
+</body>
+
+</html>

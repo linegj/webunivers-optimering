@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#logo {
+    width: 80px;
+    height: 80px;
+}
+
+.baggrund1 {
+    background-image:url('../img/kamera-billeder-small/naturbuket-groen-original.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width:100%;
+    height: 100vh;
+}
+
+.content1 {
+    padding-top: 180px;
+    padding-left: 100px;
+}
+
+.content1 h1 {
+    font-size: 80px;
+    font-family: brush script MT, sans-serif; 
+    color: #051709;
+    font-style: italic;
+}
+
+.content1 h2 {
+    font-size: 35px;
+    padding-left: 60px;
+}
+
+.baggrund2 {
+    background-image:url('../img/kamera-billeder-small/groenne-blade.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width:100%;
+    height: 100vh;
+}
+
+.box {
+   width: 100%;
+   background-color: rgba(0,0,0,0.5);
+   padding: 30px;
+
+}
+
+.box h2 {
+    font-size: 35px;
+    color: #eddbce;
+    text-align: center;
+}
+
+.tekstbox1 {
+   background-color: rgba(0,0,0,0.5);
+  position: relative;
+  padding:60px;
+  width: 80%;
+  margin: 10%;
+  margin-top: 8%;
+}
+.tekstbox1 h2 {
+    font-size: 50px;
+    font-family: brush script MT, sans-serif;
+    color: #eddbce;
+    font-style: italic;
+    text-align: center;
+}
+
+.tekstbox1 p {
+    font-size: 25px;
+    color: #eddbce;
+    text-align: center;
+    line-height: 40px;
+    padding-top: 30px;
+}
+
+.baggrund3 {
+    background-image: url(../img/kamera-billeder-small/groenne-blade.webp);
+    width: 100%;
+   background-attachment: fixed;
+   background-size: cover;
+   background-attachment: fixed;
+   background-position: center;
+}
+
+.boxlayout {
+    display: flex;
+    justify-content: space-between;
+}
+
+.trend {
+    width: 280px;
+    margin: 2%;
+    color:#eddbce;
+    min-height: 100px;
+    line-height: 40px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 16px;
+}
+
+.trend h2 {
+    font-size: 30px;
+    font-family: brush script MT, sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+
+.trend p {
+    font-size: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.bladkrans {
+    width: 280px;
+    margin: 2%;
+    border: 3px solid #051709;
+    background-color:#314132;
+    min-height: 100px;
+    border-radius: 16px;
+}
+
+.bladkrans:hover {
+    background: rgba(0,0,0,0.5);
+    padding: 5px 
+}
+
+.bundetkrans:hover {
+    background: rgba(0,0,0,0.5); 
+    padding: 5px 
+}
+
+.plantens-rejse:hover {
+    background: rgba(0,0,0,0.5);
+    padding: 5px 
+}
+
+
+.bundetkrans {
+    width: 280px;
+    margin: 2%;
+    border: 3px solid #051709;
+    background-color:#314132;
+    color: #eddbce;
+    min-height: 100px;
+    border-radius: 16px;
+}
+
+.plantens-rejse {
+    width: 280px;
+    margin: 2%;
+    border: 3px solid #051709;
+    background-color:#314132;
+    color: #eddbce;
+    min-height: 100px;
+    border-radius: 16px;
+}
+
+.plantens-rejse img {
+    width: 280px;
+    height: 280px;
+}
+
+.bundetkrans img {
+    width: 280px;
+    height: 280px;
+}
+
+.bladkrans img {
+    width: 280px;
+    height: 280px;
+}
+
+header { /* Her styler jeg indholdet i headeren. Det består af navigatinsbaren. */
+    position:fixed; /*headeren følger med ned når man scroller*/
+    top: 0;/*udfylder hele toppet (ingen space i top, højre og venstre*/
+    left: 0;
+    right: 0;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1); /*headeren har en skygge*/
+    display: flex; /*anchortagsene placeres ved siden af hinanden*/
+    align-items: center; /*placeres i midten*/
+    justify-content: space-between; /*luft omkring*/
+    padding: 5px 7%;/*indre luft 5px er top og bund og 7% er højre og venstre*/
+    z-index: 1000;/*lodret akse. elementet skal have en høj prioritet */
+    background-color: rgba(0,0,0,0.5); /*halv gennemsigtig baggrundsfarve */
+} 
+
+header .navbar ul {
+    list-style: none;
+    margin-top: 30px;
+}
+
+header .navbar ul li {
+    position: relative;
+    float: left;
+    margin: 5px 5px;
+}
+
+header .navbar ul li a { /*her styler jeg hyperlinks i liste */
+   text-decoration: none;
+   font-size: 20px;
+   padding: 18px;
+   color: #eddbce ;
+   display: block;
+}
+
+header .navbar ul li a:hover {  /*baggrunden ændrer farve, når man holder musen over et hyperlink */
+    background: #051709;
+    color: #eddbce ;
+}
+
+header .navbar ul li ul {
+    position: absolute;
+    left: 0px;
+    width: 200px;
+    background: #3a4f3e;
+    display: none;
+}
+
+header .navbar ul li ul li {
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,0.1) ;
+}
+
+header .navbar ul li ul li ul {
+    left: 200px;
+    top: 0;
+}
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul { /*når man hover over en listepost, vil det påvirke de underordnede lister, der ligger inde i selve listeposten */
+    display: block;
+}
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    font-size: 20%;
+    color: #eddbce ;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width:991px) {
+
+
+    header {
+        padding: 20px;
+    }
+
+    header label {
+        display: block;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: 1px solid rgba(0,0,0,0.1);
+        display: none;
+    }
+
+    header .navbar ul li {
+        width: 100%;
+    }
+
+    header .navbar ul li ul {
+        position: relative;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li {
+        background: #eee;
+    }
+
+    header .navbar ul li ul li ul {
+        width: 100%;
+        left: 0;
+    }
+
+    #menu-bar:checked ~ .navbar {
+        display: block;
+    }
+
+}
+
+footer {
+    background-image: url(../img/kamera-billeder-small/groenne-blade.webp);
+    width: 100%;
+   background-attachment: fixed;
+   background-size: cover;
+   background-position: center;
+   padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    background-color: rgba(0,0,0,0.5);
+    padding: 5px 7%;
+}
+
+.medlem {
+    list-style: none;
+}
+
+.medlem input {
+    text-align: center;
+    margin-top: 8%;
+    border-color: #eddbce;
+    background-color:  rgba(0,0,0,0.5);
+    color: #eddbce;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+}
+
+.medlem  button {
+    text-align: center;
+    padding: 2px;
+    background-color: #eddbce;
+    margin-top: 8%;
+    display: flex;
+}
+
+.medlem h3 {
+    color: #eddbce;
+    font-size: 25px;
+}
+
+.footer-logo img {
+    width: 350px;
+    height: 100px;
+}
+
+.kontakt h3 {
+    color: #eddbce;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.kontakt img {
+    width: 160px;
+    margin-top: 10%;
+}
+
+.kontakt p {
+    color: #eddbce;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10%;
+}
+   
